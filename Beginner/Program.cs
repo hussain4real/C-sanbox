@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Beginner
+﻿namespace Beginner
 {
     class Program
     {
         static void Main(string[] args)
         {
+            int[] numbers = new int[7];
 
-            var name = "Aminu";
+            numbers[0] = 4;
+            numbers[1] = 7;
+            numbers[2] = 10;
 
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(i);
-                if (i == 7)
-                {
-                    Console.WriteLine("Found seven");
-                    break;
+            short justByte = 245;
+            Console.WriteLine(justByte);
+            Console.ReadLine();
 
-                }
-                Console.WriteLine(name);
-            }
+            justByte += 1;
+            Console.WriteLine(justByte);
+            Console.ReadLine();
+
+            Console.WriteLine($"this is the lenght of numbers array: {numbers.Length}");
         }
     }
 }
